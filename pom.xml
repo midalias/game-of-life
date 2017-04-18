@@ -20,6 +20,18 @@
         <jelastic.context>gameoflife</jelastic.context>
         <jelastic.environment>wakaleo</jelastic.environment>
     </properties>
+    <distributionManagement>
+        <repository>
+            <id>nexusIdaliaTest</id>
+            <name>Nexus-releases</name>
+            <url>http://10.133.145.29:8081/repository/test-game-of-life/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexusIdaliaTest</id>
+            <name>nexusIdaliaTest</name>
+            <url>http://10.133.145.29:8081/repository/test-game-of-life/</url>
+        </snapshotRepository>
+    </distributionManagement>    
 
     <scm>
         <connection>scm:git:git@github.com:${github.account}/game-of-life.git</connection>
